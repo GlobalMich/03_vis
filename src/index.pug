@@ -1,0 +1,91 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.container
+		include pug/header.pug
+		include pug/nav.pug
+		.content
+			.content__fio
+				h1
+					| Иванов Сергей Олегович
+			.row
+				.col-sm-4
+					.content__img
+						img(src="images/face.jpg", alt="face")
+				.col-sm-8
+					.content__table
+						table
+							tbody
+								tr
+									td
+										b
+											| Дата рождения:
+									td
+										| 25.04.2000
+								tr
+									td
+										b
+											| Место проживания:
+									td
+										| г. Калининград
+								tr
+									td
+										b
+											| Семейное положение:
+									td
+										| Холост
+								tr
+									td
+										b
+											| Опыт работы:
+									td
+										| 1 год.
+								tr
+									td
+										b
+											| Образование:
+									td
+										| высшее техническое
+			.contact
+				h2 
+					| Контактные данные
+				table.contact__table
+					tbody
+						tr
+							td
+								b
+									| Телефон:
+							td
+								| +7(977)9939898
+						tr
+							td
+								b
+									| Email:
+							td
+								| serega@itiban.com
+						tr
+							td
+								b
+									| Skype:
+							td
+								| serega_dotka2
+				h2
+					| О себе
+				h3
+					|	Личные качества
+				p
+					| Есть желание обучаться, развиваться профессионально, стремиться к карьерному росту; хочу повышать уровень знаний в данной области, обучаться новым технологиям и уметь применять полученные знания на практике.
+				h3
+					| Ожидания от работы
+				p
+					| Возможность профессионального роста, повышения квалификации, приемлемые условия труда.
+				h3
+					| А ещё...
+				p
+					| ...а еще я трансвистит.
+		hr.line
+		include pug/footer.pug
+	//- end

@@ -1,0 +1,126 @@
+// stylelint-disable at-rule-empty-line-before
+
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "fonts";
+@import "vendor";
+@import "base";
+
+body{
+	position: relative;
+	background-color: #081a29;
+	&:after{
+			content: '';
+		  width: 1100px;
+		  height: 600px;
+			background: radial-gradient(#175169, rgba(8,25,40,0.3	));
+			position: absolute;
+			z-index: -1;
+			bottom:-120px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+		  border-radius: 600px / 350px;
+		  filter: blur(50px);
+}
+
+}
+.container{
+		width: 820px;
+}
+
+.header {
+	&__logo{
+		text-align: center;
+		width: 100%;
+		padding: 55px;
+	}
+}
+.nav{
+	display: -webkit-flex;
+	justify-content: space-between;
+	font-size: 22px;
+	font-family: tahoma;
+	padding-bottom: 25px;
+	img{
+		padding-right: 10px;
+	}
+	a:active{
+		color: white;
+	}
+	a:visited{
+		color: white;
+	}
+	a:hover{
+		color: white;
+	}
+}
+.content {
+	background-color: #f3f3f3;
+	border-radius: 10px;
+	box-shadow: 7px 7px 1px rgba(0,0,0,0.3);
+	padding: 40px 70px 40px 70px;
+	color: #0e4d66;
+	font-family: tahoma;
+	h1{
+		text-shadow: 3px 3px 1px rgba(0,0,0,0.3);
+		padding-bottom: 15px;
+	}
+		&__table{
+			& tbody{
+				& td{
+					width: 220px;
+					padding-left: 20px;
+					padding-bottom: 20px;
+				}
+			}
+		}
+		&__img {
+	    width: 100%;
+	    max-width: 170px;
+	    height: 180px;
+	    overflow: hidden;
+	    text-align: center;
+	    margin: auto;
+	    border: 4px solid #fff;
+	    border-radius: 10px;
+	    box-shadow: 0 0px 1px 4px #0a2536;
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}	
+		}
+}
+
+.contact{
+	&__table{
+		& tbody{
+			& td{
+				width: 100px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+.line {
+		background: radial-gradient(#1f6d7f, #081a29);
+		height:1px;
+		border: 0px;
+		width: 1000px;
+		margin-top: 40px;
+		margin-left:-100px;
+	}
+.footer{
+	color:white;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	&__number{
+		span{
+		color:orange;
+		font-size: 20px;
+	}
+}
+}
